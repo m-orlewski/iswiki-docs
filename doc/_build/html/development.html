@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="pl" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dokumentacja deweloperska &mdash; IS-WIKI 1.0.0 - dokumentacja</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/translations.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Indeks" href="genindex.html" />
+    <link rel="search" title="Szukaj" href="search.html" />
+    <link rel="next" title="Raport Wykonanych Prac" href="report.html" />
+    <link rel="prev" title="Poradnik użytkownika" href="user_guide.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> IS-WIKI
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Szukaj" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Zawartość:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="user_docs.html">Dokumentacja użytkownika</a></li>
+<li class="toctree-l1"><a class="reference internal" href="user_guide.html">Poradnik użytkownika</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Dokumentacja deweloperska</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#zakres-realizacji">Zakres Realizacji</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#architektura">Architektura</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#diagram-erd">Diagram ERD</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#paczka-erd">Paczka ERD</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#django-erd">Django ERD</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#wybrane-narzedzia-i-jezyki-programowania">Wybrane narzędzia i języki programowania</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#rozwiazania-zastosowane-w-produkcie">Rozwiązania zastosowane w produkcie</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#pomysly-ulepszen">Pomysły Ulepszeń</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#wykorzystane-narzedzia-do-prowadzenia-projektu">Wykorzystane Narzędzia Do Prowadzenia Projektu</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="report.html">Raport Wykonanych Prac</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributors.html">Współtwórcy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="license.html">Licencja</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">IS-WIKI</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Dokumentacja deweloperska</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/development.rst.txt" rel="nofollow"> Zobacz źródło strony</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="dokumentacja-deweloperska">
+<h1>Dokumentacja deweloperska<a class="headerlink" href="#dokumentacja-deweloperska" title="Permalink to this heading"></a></h1>
+<section id="zakres-realizacji">
+<h2>Zakres Realizacji<a class="headerlink" href="#zakres-realizacji" title="Permalink to this heading"></a></h2>
+<ol class="arabic simple">
+<li><dl class="simple">
+<dt>Prowadzenie bazy użytkowników(Obejmuje sprawy związane z Autentykacją oraz modyfikacją uprawnień użytkownika) - <strong>ZREALIZOWANO</strong></dt><dd><ul class="simple">
+<li><p>Rejestracja klienta(Zakładanie nowego konta poprzez podanie loginu, hasła, adresu e-mail oraz roku studiów) - <code class="docutils literal notranslate"><span class="pre">nie</span> <span class="pre">uwzględnia</span> <span class="pre">roku</span> <span class="pre">studiów</span></code>.</p></li>
+<li><p>Logowanie klienta(Logowanie użytkownika do systemu) - <strong>ZREALIZOWANO</strong></p></li>
+<li><p>Przypomnienie hasła(Link resetujący hasło wysłany na podany email) - <code class="docutils literal notranslate"><span class="pre">NIE</span> <span class="pre">ZREALIZOWANO</span></code></p></li>
+<li><p>Modyfikacja danych klienta(Modyfikacja aktualnego roku studiów, robiona automatycznie po zakończeniu semestru lub ręcznie przez administratora serwisu) - <code class="docutils literal notranslate"><span class="pre">NIE</span> <span class="pre">ZAIMPLEMENTOWANO</span> <span class="pre">INFORMACJI</span> <span class="pre">O</span> <span class="pre">ROKU</span> <span class="pre">STUDIÓW</span></code></p></li>
+<li><p>Modyfikacja uprawnień klienta(Nadawanie użytkownikowi praw administratora, przez istniejącego już administratora) - <strong>ZREALIZOWANO</strong></p></li>
+<li><p>Obsługa bazy przedmiotów(Obejmuje możliwość aktualizacji danych o przedmiotach oraz pozwala na ich odczytanie) - <strong>ZREALIZOWANO</strong></p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Obsługa bazy przedmiotów(Dodawanie lub usuwanie przedmiotów realizowanych na wydziale, realizowane jest przez administratora) - <strong>ZREALIZOWANO</strong></dt><dd><ul class="simple">
+<li><p>Dodanie komentarza o przedmiocie(Zapisanie do systemu opinii na temat przedmiotu) - <strong>ZREALIZOWANO</strong></p></li>
+<li><p>Zmiana lub likwidacja komentarza(Możliwość usuwania swoich komentarzy przez użytkownika lub administratora serwisu) - <code class="docutils literal notranslate"><span class="pre">Jedynie</span> <span class="pre">przez</span> <span class="pre">administratora</span></code>.</p></li>
+<li><p>Dodanie oceny o przedmiocie(Polega na wystawieniu oceny dla danego przedmiotu w skali od 1-10) - <strong>ZREALIZOWANO</strong></p></li>
+<li><p>Przesyłanie plików związanych z przedmiotem(Możliwość przesłania notatek z wykładów, treści egzaminów z poprzednich lat oraz zadań robionych na ćwiczeniach-do tej operacji wymagany jest odpowiedni rok studiów) - <code class="docutils literal notranslate"><span class="pre">NIE</span> <span class="pre">ZREALIZOWANO</span></code>.</p></li>
+<li><p>Zapoznanie się z informacjami o przedmiocie(Przegląd obecnych informacji na temat przedmiotu, czyli oceny oraz opinii dla wszystkich użytkowników) - <strong>ZREALIZOWANO</strong></p></li>
+<li><p>Pobieranie materiałów do przedmiotu - <strong>ZREALIZOWANO</strong></p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Obsługa bazy prowadzących(Pozwala na zapis oraz odczyt danych o profesorach prowadzących przedmioty na wydziale FiIS) - <strong>ZREALIZOWANO</strong></dt><dd><ul class="simple">
+<li><p>Modyfikacja listy prowadzących(Zmiana listy prowadzących w bazie danych, realizowane jest przez administratora) - <strong>ZREALIZOWANO</strong></p></li>
+<li><p>Zapis komentarza o prowadzącym( Dodanie opinii na temat prowadzącego do systemu) - <strong>ZREALIZOWANO</strong></p></li>
+<li><p>Zmiana lub likwidacja komentarza(Możliwość usuwania swoich komentarzy przez użytkownika lub administratora) - <code class="docutils literal notranslate"><span class="pre">NIE</span> <span class="pre">ZREALIZOWANO</span></code>.</p></li>
+<li><p>Dodanie oceny o prowadzącym(Pozwala na ocenienie prowadzącego w skali od 1-10) - <strong>ZREALIZOWANO</strong></p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ol>
+</section>
+<section id="architektura">
+<h2>Architektura<a class="headerlink" href="#architektura" title="Permalink to this heading"></a></h2>
+<img alt="_images/architecture.png" src="_images/architecture.png" />
+</section>
+<section id="diagram-erd">
+<h2>Diagram ERD<a class="headerlink" href="#diagram-erd" title="Permalink to this heading"></a></h2>
+<section id="paczka-erd">
+<h3>Paczka ERD<a class="headerlink" href="#paczka-erd" title="Permalink to this heading"></a></h3>
+<img alt="_images/erd_1.png" src="_images/erd_1.png" />
+</section>
+<section id="django-erd">
+<h3>Django ERD<a class="headerlink" href="#django-erd" title="Permalink to this heading"></a></h3>
+<img alt="_images/erd_2.png" src="_images/erd_2.png" />
+</section>
+</section>
+<section id="wybrane-narzedzia-i-jezyki-programowania">
+<h2>Wybrane narzędzia i języki programowania<a class="headerlink" href="#wybrane-narzedzia-i-jezyki-programowania" title="Permalink to this heading"></a></h2>
+<ul class="simple">
+<li><p>Python - Django</p></li>
+<li><p>React.js</p></li>
+</ul>
+</section>
+<section id="rozwiazania-zastosowane-w-produkcie">
+<h2>Rozwiązania zastosowane w produkcie<a class="headerlink" href="#rozwiazania-zastosowane-w-produkcie" title="Permalink to this heading"></a></h2>
+<ol class="arabic simple">
+<li><p>Struktura aplikacji</p></li>
+</ol>
+<p>Frontend aplikacji napisano w języku React.js. Komunikacja z bazą danych
+następuje poprzez wysyłanie zapytań do RESTowego API napisanego
+w Django (Django REST framework). Zastosowana baza danych to SQLite.</p>
+<ol class="arabic simple">
+<li><p>Dostęp do aplikacji</p></li>
+</ol>
+<p>Dostęp do aplikacji uzyskują jedynie użytkownicy posiadający adresy email
+w domenie &#64;student.agh.edu.pl. W trakcie rejestracji na podany mail wysyłany
+jest kod dostępu, konto jest aktywowane po wpisaniu otrzymanego kodu.</p>
+<ol class="arabic simple">
+<li><p>Opis API</p></li>
+</ol>
+<p>API dostępne jest pod następującym linkiem: <a class="reference external" href="https://iswiki-backend.herokuapp.com/api">API</a>.</p>
+<p>Lista endpoint-ów:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>/token/ - zwraca token sesyjny potrzebny do logowania/rejestracji</p></li>
+<li><p>/token/refresh/ - odświeża token sesyjny</p></li>
+<li><p>/user/register/ - założenie konta użytkownika</p></li>
+<li><p>/user/credentials/ - zwraca dane zalogowanego użytkownika</p></li>
+<li><p>/user/logout/blacklist/ - dodaje token wylogowanego użytkownika do czarnej listy</p></li>
+<li><p>/paczka/lecturers/ - zwraca listę prowadzących</p></li>
+<li><p>/paczka/lecturer/ - zwraca prowadzącego o konkretnym id</p></li>
+<li><p>/paczka/courses/ - zwraca listę przedmiotów</p></li>
+<li><p>/paczka/course/ - zwraca przedmiot o konkretnym id</p></li>
+<li><p>/paczka/reviews/ - zwraca listę opinii</p></li>
+<li><p>/paczka/review/ - zwraca opinię o konkretnym id</p></li>
+<li><p>/paczka/add_review/ - dodaje opinię do bazy</p></li>
+<li><p>/paczka/materials/ - zwraca listę materiałów</p></li>
+<li><p>/paczka/material/ - zwraca materiał o konkretnym id</p></li>
+</ul>
+</div></blockquote>
+</section>
+<section id="pomysly-ulepszen">
+<h2>Pomysły Ulepszeń<a class="headerlink" href="#pomysly-ulepszen" title="Permalink to this heading"></a></h2>
+<ul class="simple">
+<li><p>Dodanie forum dla studentów</p></li>
+<li><p>Dodanie możliwości edytowania i usuwania opinii</p></li>
+<li><p>Rozszerzenie profilu użytkownika, lista opinii przez niego wystawionych</p></li>
+<li><p>Kalendarz z datami egzaminów, zaliczeń itp.</p></li>
+</ul>
+</section>
+<section id="wykorzystane-narzedzia-do-prowadzenia-projektu">
+<h2>Wykorzystane Narzędzia Do Prowadzenia Projektu<a class="headerlink" href="#wykorzystane-narzedzia-do-prowadzenia-projektu" title="Permalink to this heading"></a></h2>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 36%" />
+<col style="width: 64%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Nazwa</p></th>
+<th class="head"><p>Opis</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Jira</p></td>
+<td><p>Kordynowanie i planowanie działań</p></td>
+</tr>
+<tr class="row-odd"><td><p>Bitbucket + Git</p></td>
+<td><p>System Kontroli Wersji</p></td>
+</tr>
+<tr class="row-even"><td><p>Visual Studio Code</p></td>
+<td><p>Edytor Kodu</p></td>
+</tr>
+<tr class="row-odd"><td><p>Oracle VM VirtualBox</p></td>
+<td><p>Wirtualna Maszyna</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="user_guide.html" class="btn btn-neutral float-left" title="Poradnik użytkownika" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Poprzedni</a>
+        <a href="report.html" class="btn btn-neutral float-right" title="Raport Wykonanych Prac" accesskey="n" rel="next">Następny <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, IO-GR7.</p>
+  </div>
+
+  Zbudowano w <a href="https://www.sphinx-doc.org/">Sphinx</a> używając
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    dostarczone przez <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="pl" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Raport Wykonanych Prac &mdash; IS-WIKI 1.0.0 - dokumentacja</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/translations.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Indeks" href="genindex.html" />
+    <link rel="search" title="Szukaj" href="search.html" />
+    <link rel="next" title="Współtwórcy" href="contributors.html" />
+    <link rel="prev" title="Dokumentacja deweloperska" href="development.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> IS-WIKI
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Szukaj" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Zawartość:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="user_docs.html">Dokumentacja użytkownika</a></li>
+<li class="toctree-l1"><a class="reference internal" href="user_guide.html">Poradnik użytkownika</a></li>
+<li class="toctree-l1"><a class="reference internal" href="development.html">Dokumentacja deweloperska</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Raport Wykonanych Prac</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributors.html">Współtwórcy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="license.html">Licencja</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">IS-WIKI</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Raport Wykonanych Prac</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/report.rst.txt" rel="nofollow"> Zobacz źródło strony</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="raport-wykonanych-prac">
+<h1>Raport Wykonanych Prac<a class="headerlink" href="#raport-wykonanych-prac" title="Permalink to this heading"></a></h1>
+<p><strong>Kroki Powstawania Strony:</strong></p>
+<ol class="arabic simple">
+<li><p>Wybór technologii do zastosowania w projekcie</p></li>
+<li><p>Projekt UI Strony</p></li>
+<li><p>System logowania i rejestracji użytkowników</p></li>
+<li><p>Projekt i koncepcja bazy danych</p></li>
+<li><p>Django backend api setup</p></li>
+<li><dl class="simple">
+<dt>Implementacja modeli api w Django:</dt><dd><ul class="simple">
+<li><p>Course model</p></li>
+<li><p>Lecturer model</p></li>
+<li><p>Review model</p></li>
+<li><p>Material model</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p>Strona logowania i rejestracji</p></li>
+<li><p>Bazowy szablon strony</p></li>
+<li><p>Testy utworzonych modeli Django</p></li>
+<li><p>Serializer konwertujący modele Django do obiektów JSON</p></li>
+<li><p>Połączenie API z aplikacją React-ową</p></li>
+<li><p>Populacja bazy danych z poziomu panelu admina na potrzeby testowania</p></li>
+<li><dl class="simple">
+<dt>Stworzenie podstron aplikacji:</dt><dd><ul class="simple">
+<li><p>Strona główna</p></li>
+<li><p>Strona z profilem użytkownika</p></li>
+<li><p>Strona przedmiotu</p></li>
+<li><p>Strona prowadzącego</p></li>
+<li><p>Strona z opiniami o przedmiocie/prowadzącym</p></li>
+<li><p>Strona do wystawiania opinii</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p>Połączenie API z aplikacją React-ową</p></li>
+<li><p>Zastosowanie gotowych css-ów z biblioteki Bootstrap</p></li>
+<li><p>Autoryzacja użytkowników na backendzie</p></li>
+<li><p>Diagram ERD</p></li>
+<li><p>Aktualizacja bazy danych</p></li>
+<li><p>Strona z listą przedmiotów i strony konkretnych przedmiotów</p></li>
+<li><p>Dodanie opcji dodawania opinii o prowadzących/przedmiotach</p></li>
+<li><p>Strona z listą prowadzących i profilami konkretnych prowadzących</p></li>
+<li><p>Dodanie sortowania przedmiotów/prowadzących po nazwie/numerze semestru itp.</p></li>
+<li><p>Odnośniki do stron z materiałami i opiniami na stronach prowadzącego i przedmiotu</p></li>
+<li><p>Populacja bazy danych danymi z sylabusa kierunku</p></li>
+<li><p>Połączenie aplikacji z dyskiem zewnętrznym do przechowywania materiałów</p></li>
+<li><p>Strona z materiałami do przedmiotu</p></li>
+<li><p>Deploy strony na heroku</p></li>
+<li><p>Zastosowanie css-ów z biblioteki Bootstrap na nowych stronach</p></li>
+</ol>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="development.html" class="btn btn-neutral float-left" title="Dokumentacja deweloperska" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Poprzedni</a>
+        <a href="contributors.html" class="btn btn-neutral float-right" title="Współtwórcy" accesskey="n" rel="next">Następny <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, IO-GR7.</p>
+  </div>
+
+  Zbudowano w <a href="https://www.sphinx-doc.org/">Sphinx</a> używając
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    dostarczone przez <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
