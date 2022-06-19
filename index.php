@@ -1,1 +1,0 @@
-<?php include_once("doc/_build/html/index.html"); ?>
